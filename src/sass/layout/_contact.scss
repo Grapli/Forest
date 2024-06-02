@@ -18,7 +18,7 @@
 .contact-box {
 	display: flex;
 	flex-direction: column;
-	margin: 2em 0;
+	margin: 2em 0em;
 }
 
 .contact-form label {
@@ -49,7 +49,7 @@
 }
 
 .map {
-	padding: 2em 0;
+	padding: 3em 0;
 	height: 25em;
 	width: 13em;
 }
@@ -72,6 +72,26 @@
 .error {
 	display: flex;
 	background-color: tomato;
+}
+
+@media (min-width: 300px) {
+	.contact-form {
+		width: 17em;
+	}
+
+	.contact-box {
+		margin: 2em 0;
+	}
+
+	.map {
+		height: 25em;
+		width: 17em;
+	}
+
+    .msg-status{
+        padding: 1em 4em;
+    }
+
 }
 
 @media (min-width: 400px) {
