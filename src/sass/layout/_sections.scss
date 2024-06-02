@@ -104,6 +104,16 @@
 		}
 
 		&-list {
+			.fa-check {
+				color: $light-green;
+			}
+			.bold {
+				font-weight: bold;
+			}
+			.gray {
+				color: $focus-gray;
+			}
+
 			&-item {
 				padding: 0.5em;
 				list-style: none;
@@ -125,16 +135,6 @@
 				}
 			}
 		}
-	}
-
-	.fa-check {
-		color: $light-green;
-	}
-	.bold {
-		font-weight: bold;
-	}
-	.gray {
-		color: $focus-gray;
 	}
 
 	&__other {
