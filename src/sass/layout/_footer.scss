@@ -1,0 +1,77 @@
+@use 'variables/colors' as *;
+@use 'variables/media' as *;
+
+.footer {
+	background-color: $light-gray;
+
+	.wrapper {
+		padding: 4em 2em 2em;
+	}
+	.fa-tree {
+		color: $dark-gray;
+	}
+
+	&__boxes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__box {
+		&:nth-child(2) {
+			padding-right: 3.2em;
+		}
+		&-name {
+			font-size: 3.5rem;
+		}
+
+		&-title {
+			margin: 0.5em 0;
+			font-size: 2rem;
+		}
+
+		&-list {
+			list-style: none;
+
+			&-item {
+				margin: 0.4em 0;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__bottom-text {
+		background-color: $light-gray;
+		font-size: 1.3rem;
+		padding: 1.5em;
+		text-align: center;
+	}
+}
+
+@media ($media-large) {
+	.footer {
+		.wrapper {
+			padding: 3em 7em 2em;
+		}
+
+		&__boxes {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__box {
+			&-name {
+				font-size: 4rem;
+				padding-bottom: 2.5em;
+			}
+			&:last-child {
+				margin-bottom: 1.6em;
+			}
+			&:nth-child(2) {
+				margin-left: 14em;
+			}
+		}
+	}
+}

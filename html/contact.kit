@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest - Kontakt </title>
+    <meta
+			name="description"
+			content="Ten tekst i tak nie wpływa na pozycję strony w google :> " />
+    <script src="https://kit.fontawesome.com/dc3100ff67.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+    <!-- @include 'nav.kit' -->
+
+
+    <div class="section-contact wrapper">
+
+        <form action="mail.php" method="post" class="contact-form">
+
+            <div class="contact-box">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="contact-box">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="contact-box">
+                <label for="msg">Wiadomość:</label>
+                <textarea name="msg" id="msg" required></textarea>
+            </div>
+
+            <button>Wyślij</button>
+
+        </form>
+
+        <p class="msg-status"></p>
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.846237975413!2d19.889732157147517!3d50.08916564012368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1714174788052!5m2!1spl!2spl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  @include 'footer.kit' -->
+
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

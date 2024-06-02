@@ -1,0 +1,142 @@
+@use './variables/colors' as *;
+@use './variables/media' as *;
+
+.section-contact {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10em 0 3em;
+}
+
+.contact-form {
+	padding: 1em;
+	box-shadow: 5px 5px 15px #2e2e2e2e;
+	border-radius: 5px;
+}
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0;
+}
+
+.contact-form label {
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	padding: 1.2em;
+	font-size: 1.1rem;
+	font-family: inherit;
+	border-radius: 5px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	min-height: 6em;
+}
+
+.contact-form button {
+	width: 100%;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	background-color: $light-green;
+}
+
+.map {
+	padding: 2em 0;
+	height: 25em;
+	width: 13em;
+}
+
+.msg-status {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 90px;
+	padding: 1em;
+	border-radius: 5px;
+}
+.success {
+	display: flex;
+	background-color: $light-green;
+	// width: 100%;
+}
+
+.error {
+	display: flex;
+	background-color: tomato;
+}
+
+@media (min-width: 400px) {
+	.contact-form {
+		width: 22em;
+	}
+
+	.contact-box {
+		margin: 2em 0;
+	}
+
+	.map {
+		height: 25em;
+		width: 22em;
+	}
+
+    .msg-status{
+        padding: 1em 4em;
+    }
+
+}
+
+@media ($media-small) {
+	.contact-form {
+		width: 32em;
+	}
+	.map {
+		height: 27em;
+		width: 32em;
+	}
+    .msg-status{
+        padding: 1em 6em;
+    }
+}
+
+@media ($media-medium) {
+	.contact-form {
+		width: 42em;
+	}
+
+	.map {
+		height: 31em;
+		width: 42em;
+	}
+
+    .msg-status{
+        padding: 1em 8em;
+    }
+}
+@media ($media-large) {
+	.section-contact {
+		flex-direction: row;
+	}
+	.contact-box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	.map {
+		padding-left: 1.5em;
+	}
+
+	.msg-status {
+		left: 50%;
+		transform: translateX(-50%);
+        padding: 1em 10em;
+	}
+}

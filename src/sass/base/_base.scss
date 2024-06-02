@@ -1,0 +1,59 @@
+@use '../variables/colors' as *;
+@use '../variables/media' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	height: 100vh;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.wrapper-nav {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.section-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1.2em;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 400;
+}
+.section-paragraf {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	margin: 1.2em;
+	font-size: 1.6rem;
+	margin-bottom: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.active-scroll {
+	color: $white;
+	background-color: $black;
+}
